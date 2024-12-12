@@ -10,7 +10,7 @@ output_path = "/data/output/enriched_data"
 enriched_data_df = spark.read.parquet(output_path)
 
 # Step 2: Show a sample of the enriched data
-enriched_data_df.show(20)  # Show the first 5 rows of the dataframe
+enriched_data_df.show(20)  # Show the first 20 rows of the dataframe
 
 # Step 3: Inspect the schema to understand the data structure
 enriched_data_df.printSchema()
